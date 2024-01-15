@@ -33,7 +33,9 @@ console.log(isEmpty([1])) // 输出 false
 
 ### 在浏览器中使用
 
-如果直接在浏览器中使用，则不需要包管理。在浏览器中引用：
+如果直接在浏览器中使用，则不需要包管理。直接下载 [tag](https://github.com/ChaseWindYoungs/tobe-utils/releases/tag) 中的最新版本 `index.umd.js`，使用的是 UMD 通用模块规范。
+
+然后在浏览器中引用：
 
 ```html
 <script src="./index.umd.js"></script>
