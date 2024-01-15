@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "lib",  /* Specify an output folder for all emitted files. 指定了输出目录，编译后的 js、.d.ts 声明文件等都会打包到 lib 文件夹内。 */
+    "rootDir": "./packages", /* Specify the root folder within your source files. 指定了根目录，该目录下的文件结构会在打包的目录中得到保留，后续所有开发的 utils 都要放在这个文件夹中。 */
+  },
+  "include": [ /* 指定需要编译处理的文件列表，解析路径相对于当前项目的 tsconfig.json 文件位置。 */
+    "packages/**/*.ts",
+    "packages/**/*.tsx"
+  ],
+  "exclude": [ /* 指定在解析 include 时应跳过的文件，所以该配置项只会对 include 包含的文件有影响。 */
+    "packages/**/__test__/*.test.ts",
+  ]
+}
